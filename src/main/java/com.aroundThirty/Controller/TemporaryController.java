@@ -18,8 +18,8 @@ public class TemporaryController {
 
     public void showAll(){
         temporaryListAll = TemporaryDao.temporarySelectAll();
-        for (TemporaryDto Dto : temporaryListAll) {
-            temporaryDto = Dto;
+        if (!temporaryListAll.isEmpty()){
+            temporaryDto = temporaryListAll.get(temporaryListAll.size() - 1);
         }
         for (int i = 0; i < temporaryListAll.size(); i++) {
             ImageIcon img = new ImageIcon(temporaryListAll.get(i).thumbnail_Img);

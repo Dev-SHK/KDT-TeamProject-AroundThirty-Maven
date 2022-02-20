@@ -23,8 +23,8 @@ public class ReportController {
 
     public void showAll(){
         reportListAll = ReportDao.reportSelectAll();
-        for (ReportDto Dto : reportListAll) {
-            reportDto = Dto;
+        if (!reportListAll.isEmpty()){
+            reportDto = reportListAll.get(reportListAll.size() - 1);
         }
         for (int i = 0; i < reportListAll.size(); i++) {
             ImageIcon img = new ImageIcon(reportListAll.get(i).thumbnail_Img);

@@ -8,7 +8,7 @@ import static com.aroundThirty.Resource.BR.*;
 
 
 public class AdoptController {
-    String defaultImgPath = "src/com/aroundThirty/imgFiles/그림1.png";
+    String defaultImgPath = "src/main/java/com.aroundThirty/imgFiles/그림1.png";
     ImageIcon defaultImg = new ImageIcon(defaultImgPath);
 
 
@@ -18,8 +18,8 @@ public class AdoptController {
 
     public void showAll(){
         adoptListAll = AdoptDao.adoptSelectAll();
-        for (AdoptDto Dto : adoptListAll) {
-            adoptDto = Dto;
+        if (!adoptListAll.isEmpty()){
+            adoptDto = adoptListAll.get(adoptListAll.size() - 1);
         }
         for (int i = 0; i < adoptListAll.size(); i++) {
             ImageIcon img = new ImageIcon(adoptListAll.get(i).thumbnail_Img);

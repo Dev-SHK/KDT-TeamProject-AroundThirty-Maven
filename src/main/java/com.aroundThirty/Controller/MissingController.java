@@ -20,8 +20,8 @@ public class MissingController {
 
     public void showAll(){
         missingListAll = MissingDao.missingSelectAll();
-        for (MissingDto Dto : missingListAll) {
-            missingDto = Dto;
+        if (!missingListAll.isEmpty()){
+            missingDto = missingListAll.get(missingListAll.size() - 1);
         }
         for (int i = 0; i < missingListAll.size(); i++) {
             ImageIcon img = new ImageIcon(missingListAll.get(i).thumbnail_Img);
