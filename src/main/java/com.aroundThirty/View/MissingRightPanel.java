@@ -32,8 +32,8 @@ public class MissingRightPanel extends JPanel {
     JLabel missingDt_Card = new JLabel("제보일자 :");
     JLabel missingDtVal = new JLabel(missingDto.missing_Date);    // DB 연결 해야함
     JTextField missingDtTxt = new JTextField(missingDto.missing_Date);    // DB 연결 해야함
-    JLabel missingPlace = new JLabel("발견 장소 :");
-    JLabel missingPlace_Card = new JLabel("발견 장소 :");
+    JLabel missingPlace = new JLabel("실종 장소 :");
+    JLabel missingPlace_Card = new JLabel("실종 장소 :");
     JTextArea missingPlaceVal = new JTextArea(missingDto.missing_Place);  // DB 연결 해야함
     JTextArea missingPlaceTxt = new JTextArea(missingDto.missing_Place);  // DB 연결 해야함
     JLabel missingKind = new JLabel("품종 :");

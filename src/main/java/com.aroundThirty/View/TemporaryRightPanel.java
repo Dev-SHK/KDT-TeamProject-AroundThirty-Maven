@@ -32,8 +32,8 @@ public class TemporaryRightPanel extends JPanel {
     JLabel temporaryDt_Card = new JLabel("제보일자 :");
     JLabel temporaryDtVal = new JLabel(temporaryDto.tmp_Date);    // DB 연결 해야함
     JTextField temporaryDtTxt = new JTextField(temporaryDto.tmp_Date);    // DB 연결 해야함
-    JLabel temporaryPlace = new JLabel("발견 장소 :");
-    JLabel temporaryPlace_Card = new JLabel("발견 장소 :");
+    JLabel temporaryPlace = new JLabel("보호 장소 :");
+    JLabel temporaryPlace_Card = new JLabel("보호 장소 :");
     JTextArea temporaryPlaceVal = new JTextArea(temporaryDto.tmp_Place);  // DB 연결 해야함
     JTextArea temporaryPlaceTxt = new JTextArea(temporaryDto.tmp_Place);  // DB 연결 해야함
     JLabel temporaryKind = new JLabel("품종 :");
