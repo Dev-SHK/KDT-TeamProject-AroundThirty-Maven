@@ -15,8 +15,8 @@ public class XmlController {
 
     public XmlController() {
         xmlDtoListAll = XmlDao.xmlSelectAll();
-        for (XmlDto Dto : xmlDtoListAll) {
-            xmlDto = Dto;
+        if (!xmlDtoListAll.isEmpty()){
+            xmlDto = xmlDtoListAll.get(xmlDtoListAll.size() - 1);
         }
 
         for (int i = 0; i < xmlDtoListAll.size(); i++) {

@@ -113,7 +113,7 @@ public class FR {
     public static String rpDetailImgPath = "src/main/java/com.aroundThirty/imgFiles/Sample.jpg";
     public static String defaultImgPath = "src/main/java/com.aroundThirty/imgFiles/그림1.png";
     public static String signbgImgPath = "src/main/java/com.aroundThirty/imgFiles/SignUpImage.png";
-    public static String roadingGIF= "src/main/java/com.aroundThirty/imgFiles/loading_simpson.gif";
+    public static String roadingGIF= "src/main/java/com.aroundThirty/imgFiles/로딩심슨.gif";
 
     public static String dogSoundPath = "src/main/java/com.aroundThirty/soundFiles/소예_멍멍.wav";
     public static String catSoundPath = "src/main/java/com.aroundThirty/soundFiles/윤슬_야옹.wav";
