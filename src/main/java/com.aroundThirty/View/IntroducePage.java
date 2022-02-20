@@ -16,6 +16,9 @@ public class IntroducePage extends JFrame {
     JPanel subjectPan02;
     JPanel emptyPan;
     JPanel personSixPan;
+    JPanel personSevenPan;
+    JPanel personEightPan;
+    JPanel personNinePan;
 
     JLabel personOneLabel;
     JLabel personTwoLabel;
@@ -25,10 +28,13 @@ public class IntroducePage extends JFrame {
     JLabel subjectLabel;
     JLabel thankstoLabel;
     JLabel personSixLabel;
+    JLabel personSevenLabel;
+    JLabel personEightLabel;
+    JLabel personNineLabel;
 
 
     public IntroducePage() {
-        setSize(240, 360);
+        setSize(240, 400);
         setResizable(false);
 
         subjectLabel = new JLabel("만든 이");
@@ -47,43 +53,61 @@ public class IntroducePage extends JFrame {
         thankstoLabel.setFont(fontNanumBold);
         personSixLabel = new JLabel("김범준 대대장님");
         personSixLabel.setFont(fontNanum);
+        personSevenLabel = new JLabel("구글러 유진킴");
+        personSevenLabel.setFont(fontNanum);
+        personEightLabel = new JLabel("경진형님의 사랑스런 첫째딸 소예");
+        personEightLabel.setFont(fontNanum);
+        personNineLabel = new JLabel("경진형님의 사랑스런 둘째딸 윤슬");
+        personNineLabel.setFont(fontNanum);
 
         subjectPan01 = new JPanel();
         subjectPan01.add(subjectLabel);
-        subjectPan01.setBackground(pastelGreen);
+        subjectPan01.setBackground(pastelPink);
 
         personOnePan = new JPanel();
         personOnePan.add(personOneLabel);
-        personOnePan.setBackground(pastelGreen);
+        personOnePan.setBackground(pastelPink);
 
         personTwoPan = new JPanel();
         personTwoPan.add(personTwoLabel);
-        personTwoPan.setBackground(pastelGreen);
+        personTwoPan.setBackground(pastelPink);
 
         personThreePan = new JPanel();
         personThreePan.add(personThreeLabel);
-        personThreePan.setBackground(pastelGreen);
+        personThreePan.setBackground(pastelPink);
 
         personFourPan = new JPanel();
         personFourPan.add(personFourLabel);
-        personFourPan.setBackground(pastelGreen);
+        personFourPan.setBackground(pastelPink);
 
         personFivePan = new JPanel();
         personFivePan.add(personFiveLabel);
-        personFivePan.setBackground(pastelGreen);
+        personFivePan.setBackground(pastelPink);
 
         emptyPan = new JPanel();
-        emptyPan.setBackground(pastelGreen);
+        emptyPan.setBackground(pastelPink);
 
         subjectPan02 = new JPanel();
         subjectPan02.add(thankstoLabel);
-        subjectPan02.setBackground(pastelGreen);
+        subjectPan02.setBackground(pastelPink);
 
         personSixPan = new JPanel();
         personSixPan.add(personSixLabel);
-        personSixPan.setBackground(pastelGreen);
+        personSixPan.setBackground(pastelPink);
 
-        JPanel gridPan = new JPanel(new GridLayout(9, 1));
+        personSevenPan = new JPanel();
+        personSevenPan.add(personSevenLabel);
+        personSevenPan.setBackground(pastelPink);
+
+        personEightPan = new JPanel();
+        personEightPan.add(personEightLabel);
+        personEightPan.setBackground(pastelPink);
+
+        personNinePan = new JPanel();
+        personNinePan.add(personNineLabel);
+        personNinePan.setBackground(pastelPink);
+
+        JPanel gridPan = new JPanel(new GridLayout(12, 1));
         gridPan.add(subjectPan01);
         gridPan.add(personOnePan);
         gridPan.add(personTwoPan);
@@ -93,13 +117,16 @@ public class IntroducePage extends JFrame {
         gridPan.add(emptyPan);
         gridPan.add(subjectPan02);
         gridPan.add(personSixPan);
-        gridPan.setBackground(pastelGreen);
+        gridPan.add(personSevenPan);
+        gridPan.add(personEightPan);
+        gridPan.add(personNinePan);
+        gridPan.setBackground(pastelPink);
 
         centerPan = new JPanel();
         centerPan.add(gridPan);
-        centerPan.setBackground(pastelGreen);
+        centerPan.setBackground(pastelPink);
 
-        setBackground(pastelGreen);
+        setBackground(pastelPink);
         add(BorderLayout.CENTER, centerPan);
         setVisible(true);
 
