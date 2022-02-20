@@ -7,92 +7,101 @@ import static com.aroundThirty.Resource.FR.*;
 
 public class SourcePage extends JFrame {
     JPanel centerPan;
-    JPanel personOnePan;
-    JPanel personTwoPan;
-    JPanel personThreePan;
-    JPanel personFourPan;
-    JPanel personFivePan;
+    JPanel sourceOnePan;
+    JPanel sourceTwoPan;
+    JPanel sourceThreePan;
+    JPanel sourceFourPan;
+    JPanel sourceFivePan;
     JPanel subjectPan01;
     JPanel subjectPan02;
     JPanel emptyPan;
-    JPanel personSixPan;
+    JPanel sourceSixPan;
+    JPanel sourceSevenPan;
 
-    JLabel personOneLabel;
-    JLabel personTwoLabel;
-    JLabel personThreeLabel;
-    JLabel personFourLabel;
-    JLabel personFiveLabel;
+    JLabel sourceOneLabel;
+    JLabel sourceTwoLabel;
+    JLabel sourceThreeLabel;
+    JLabel sourceFourLabel;
+    JLabel sourceFiveLabel;
     JLabel subjectLabel;
-    JLabel thankstoLabel;
-    JLabel personSixLabel;
+    JLabel gitHubLabel;
+    JLabel sourceSixLabel;
+    JLabel sourceSevenLabel;
 
 
     public SourcePage() {
-        setSize(480, 360);
+        setSize(540, 360);
         setResizable(false);
 
         subjectLabel = new JLabel("출 처");
         subjectLabel.setFont(fontNanumBold);
-        personOneLabel = new JLabel("https://www.data.go.kr/");
-        personOneLabel.setFont(fontNanum);
-        personTwoLabel = new JLabel("https://www.animal.go.kr/front/index.do");
-        personTwoLabel.setFont(fontNanum);
-        personThreeLabel = new JLabel("----------");
-        personThreeLabel.setFont(fontNanum);
-        personFourLabel = new JLabel("----------");
-        personFourLabel.setFont(fontNanum);
-        personFiveLabel = new JLabel("----------");
-        personFiveLabel.setFont(fontNanum);
-        thankstoLabel = new JLabel("'서른즈음에' 깃허브");
-        thankstoLabel.setFont(fontNanumBold);
-        personSixLabel = new JLabel("https://github.com/Dev-SHK/KDT-TeamProject-AroundThirty");
-        personSixLabel.setFont(fontNanum);
+        sourceOneLabel = new JLabel("https://www.data.go.kr/");
+        sourceOneLabel.setFont(fontNanum);
+        sourceTwoLabel = new JLabel("https://www.animal.go.kr/front/index.do");
+        sourceTwoLabel.setFont(fontNanum);
+        sourceThreeLabel = new JLabel("https://docs.oracle.com/javase/tutorial/");
+        sourceThreeLabel.setFont(fontNanum);
+        sourceFourLabel = new JLabel("https://mariadb.com/kb/en/mariadb-string-functions/");
+        sourceFourLabel.setFont(fontNanum);
+        sourceFiveLabel = new JLabel("https://dogmaru.co.kr/");
+        sourceFiveLabel.setFont(fontNanum);
+        sourceSevenLabel = new JLabel("https://colab.research.google.com/drive/");
+        sourceSevenLabel.setFont(fontNanum);
+        gitHubLabel = new JLabel("'서른즈음에' 깃허브");
+        gitHubLabel.setFont(fontNanumBold);
+        sourceSixLabel = new JLabel("https://github.com/Dev-SHK/KDT-TeamProject-AroundThirty-Maven.git");
+        sourceSixLabel.setFont(fontNanum);
 
         subjectPan01 = new JPanel();
         subjectPan01.add(subjectLabel);
         subjectPan01.setBackground(pastelGreen);
 
-        personOnePan = new JPanel();
-        personOnePan.add(personOneLabel);
-        personOnePan.setBackground(pastelGreen);
+        sourceOnePan = new JPanel();
+        sourceOnePan.add(sourceOneLabel);
+        sourceOnePan.setBackground(pastelGreen);
 
-        personTwoPan = new JPanel();
-        personTwoPan.add(personTwoLabel);
-        personTwoPan.setBackground(pastelGreen);
+        sourceTwoPan = new JPanel();
+        sourceTwoPan.add(sourceTwoLabel);
+        sourceTwoPan.setBackground(pastelGreen);
 
-        personThreePan = new JPanel();
-        personThreePan.add(personThreeLabel);
-        personThreePan.setBackground(pastelGreen);
+        sourceThreePan = new JPanel();
+        sourceThreePan.add(sourceThreeLabel);
+        sourceThreePan.setBackground(pastelGreen);
 
-        personFourPan = new JPanel();
-        personFourPan.add(personFourLabel);
-        personFourPan.setBackground(pastelGreen);
+        sourceFourPan = new JPanel();
+        sourceFourPan.add(sourceFourLabel);
+        sourceFourPan.setBackground(pastelGreen);
 
-        personFivePan = new JPanel();
-        personFivePan.add(personFiveLabel);
-        personFivePan.setBackground(pastelGreen);
+        sourceFivePan = new JPanel();
+        sourceFivePan.add(sourceFiveLabel);
+        sourceFivePan.setBackground(pastelGreen);
+
+        sourceSevenPan = new JPanel();
+        sourceSevenPan.add(sourceSevenLabel);
+        sourceSevenPan.setBackground(pastelGreen);
 
         emptyPan = new JPanel();
         emptyPan.setBackground(pastelGreen);
 
         subjectPan02 = new JPanel();
-        subjectPan02.add(thankstoLabel);
+        subjectPan02.add(gitHubLabel);
         subjectPan02.setBackground(pastelGreen);
 
-        personSixPan = new JPanel();
-        personSixPan.add(personSixLabel);
-        personSixPan.setBackground(pastelGreen);
+        sourceSixPan = new JPanel();
+        sourceSixPan.add(sourceSixLabel);
+        sourceSixPan.setBackground(pastelGreen);
 
-        JPanel gridPan = new JPanel(new GridLayout(9, 1));
+        JPanel gridPan = new JPanel(new GridLayout(10, 1));
         gridPan.add(subjectPan01);
-        gridPan.add(personOnePan);
-        gridPan.add(personTwoPan);
-        gridPan.add(personThreePan);
-        gridPan.add(personFourPan);
-        gridPan.add(personFivePan);
+        gridPan.add(sourceOnePan);
+        gridPan.add(sourceTwoPan);
+        gridPan.add(sourceThreePan);
+        gridPan.add(sourceFourPan);
+        gridPan.add(sourceFivePan);
+        gridPan.add(sourceSevenPan);
         gridPan.add(emptyPan);
         gridPan.add(subjectPan02);
-        gridPan.add(personSixPan);
+        gridPan.add(sourceSixPan);
         gridPan.setBackground(pastelGreen);
 
         centerPan = new JPanel();
